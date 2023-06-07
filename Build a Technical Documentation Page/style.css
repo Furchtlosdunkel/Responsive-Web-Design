@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    padding: 2rem;
+    color: rgb(94, 92, 92);
+}
+
+#navbar {
+    width: 30%;
+    position: fixed;
+}
+
+#main-doc {
+width: 70%;
+margin-left: 35%;
+
+}
+.main-section {
+    padding-bottom: 2rem;
+}

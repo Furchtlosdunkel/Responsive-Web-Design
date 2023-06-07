@@ -19,7 +19,8 @@
             <li><a href="#Hello world" class="nav-link">Hello world</a></li>
             <li><a href="#Variables" class="nav-link">Variables</a></li>
             <li><a href="#Declarning variables" class="nav-link">Declarning variables</a></li>
-            <li><a href="#Variable variables" class="nav-link">Variable variables</a></li>
+            <li><a href="#Variable scope" class="nav-link">Variable scope</a></li>
+            <li><a href="#Global Variables" class="nav-link">Global Variables</a></li>
             <li><a href="#Constants" class="nav-link">Constants</a></li>
             <li><a href="#Data types" class="nav-link">Data types</a></li>
             <li><a href="#if...else statement" class="nav-link">if...else statement</a></li>
@@ -184,8 +185,8 @@
             </article>
         </section>
         <section id="Global Variables" class="main-section">
-            <header>Global variables
-            </header>
+
+            <header>Global Variables</header>
             <article>
                 <p>Global variables are in fact properties of the global object. In web pages the global object is
                     window, so you can set and access global variables using the window.variable syntax.
@@ -302,29 +303,76 @@
             <code>if ((x = y)) { /* statements here */ } </code>
         </section>
         <section id="while statement" class="main-section">
-            <header></header>
+            <header>while statement
+            </header>
             <article>
-                <p></p>
+                <p>A while statement executes its statements as long as a specified condition evaluates to true. A while
+                    statement looks as follows:
+                </p>
+                <code>while (condition) statement</code>
+                <p>If the condition becomes false, statement within the loop stops executing and control passes to the
+                    statement following the loop.
+                </p>
+                <p>The condition test occurs before statement in the loop is executed. If the condition returns true,
+                    statement is executed and the condition is tested again. If the condition returns false, execution
+                    stops and control is passed to the statement following while.
+                </p>
+                <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.
+
+                </p>
+                Example:
+                <p>The following while loop iterates as long as n is less than three:
+
+                </p>
+                <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+                <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the
+                    following values:
+
+                </p>
+
+
                 <ul>
-                    <li></li>
+                    <li>After the first pass: n = 1 and x = 1</li>
+                    <li>After the second pass: n = 2 and x = 3</li>
+                    <li>After the third pass: n = 3 and x = 6</li>
                 </ul>
+                <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates. </p>
             </article>
         </section>
         <section id="Function declarations" class="main-section">
-            <header></header>
+            <header>Function declarations
+            </header>
             <article>
-                <p></p>
+                <p>A function definition (also called a function declaration, or function statement) consists of the
+                    function keyword, followed by:
+                </p>
                 <ul>
-                    <li></li>
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
                 </ul>
+                <p>For example, the following code defines a simple function named square:
+
+                </p>
+                <code>function square(number) { return number * number; }</code>
+                <p>The function square takes one argument, called number. The function consists of one statement that
+                    says to return the argument of the function (that is, number) multiplied by itself. The return
+                    statement specifies the value returned by the function.
+
+                </p>
+                <code>return number * number;</code>
+                <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the
+                    function, but if the function changes the value of the parameter, this change is not reflected
+                    globally or in the calling function.
+
+                </p>
             </article>
         </section>
         <section id="Reference" class="main-section">
-            <header></header>
+            <header>Reference </header>
             <article>
-                <p></p>
                 <ul>
-                    <li></li>
+                    <li>All the documentation in this page is taken from <a href="#">MDN</a></li>
                 </ul>
             </article>
         </section>
