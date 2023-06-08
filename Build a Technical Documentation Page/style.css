@@ -59,9 +59,22 @@ code {
     padding: 1rem;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
+    #navbar {float: left;}
+    #main {margin-left: 216px;}
+  }
+
+/* @media screen and (max-width: 800px){
+    body{
+        display: flex;
+    }
     #navbar {
-        display: none;
+        float: none;
+        width: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
     }
     #main-doc{
         margin: 2rem;
@@ -69,5 +82,4 @@ code {
         padding: 1rem;
         padding-top: 0;
         border: none;
-    }
-}
+    } */
