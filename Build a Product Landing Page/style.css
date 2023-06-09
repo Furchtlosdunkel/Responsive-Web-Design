@@ -24,10 +24,13 @@ body {
 #nav-bar ul {
     display: flex;
     list-style-type: none;
+   
 }
-
-#nav-bar ul li {
+.nav-link {
     padding-right: 5vw;
+    text-decoration: none;
+    color: rgb(77, 76, 76);
+   
 }
 #page-wrapper{
     position: relative;
