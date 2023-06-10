@@ -184,7 +184,10 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-    
+
+    #navbar {
+        display: none;
+    }
 
     #welcome-section h1 {
         font-size: 2rem;
@@ -238,7 +241,7 @@ img {
 
     .btn {
         display: inline-block;
-        padding: 1rem ;
+        padding: 1rem;
         border-radius: 2px;
     }
 
